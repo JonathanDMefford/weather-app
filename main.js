@@ -30,7 +30,7 @@ function weather() {
         tempC.innerHTML = Math.floor(info.main.temp - 273) + ' ' + '<sup>o</sup>C';
         tempF.innerHTML = Math.floor((info.main.temp - 273.15) * (9 / 5) + 32) + ' ' + '<sup>o</sup>F';
         conditions.innerHTML = info.weather[0].description;
-        image.innerHTML = `<img src='http://openweathermap.org/img/w/${info.weather[0].icon}.png'>`;
+        image.innerHTML = `<img class="h-50" src="http://openweathermap.org/img/w/${info.weather[0].icon}.png">`;
 
         console.log(data);
     })
