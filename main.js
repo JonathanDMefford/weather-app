@@ -23,7 +23,7 @@ function run () {
 }
 
 function weather(z) {
-    
+
     fetch(path + z + apiKey)
     .then((response) => {
         
